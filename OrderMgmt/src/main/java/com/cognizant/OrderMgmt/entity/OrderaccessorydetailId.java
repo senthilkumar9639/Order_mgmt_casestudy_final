@@ -16,7 +16,7 @@ public class OrderaccessorydetailId implements Serializable {
 	@Column(name = "CmpCode")
 	private String cmpCode;
 
-	@Column(name = "dealerCode")
+	@Column(name = "DealerCode")
 	private String dealerCode;
 
 	@Column(name = "OrderNo")

@@ -1,6 +1,0 @@
-com/cognizant/AccessoryService/entity/Accessory.class
-com/cognizant/AccessoryService/AccessoryServiceApplication.class
-com/cognizant/AccessoryService/Controller/AccessoryServiceController.class
-com/cognizant/AccessoryService/repository/AccessoryRepository.class
-com/cognizant/AccessoryService/entity/AccessoryId.class
-com/cognizant/AccessoryService/service/AccessoryService.class

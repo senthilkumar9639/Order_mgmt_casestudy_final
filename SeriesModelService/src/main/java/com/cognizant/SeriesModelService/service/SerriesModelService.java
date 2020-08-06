@@ -24,8 +24,8 @@ public class SerriesModelService {
 		
 	}
 	
-	public List<Model> getModeList(){
-		return modelRepo.findAll();
+	public List<Model> getModeList(Series series){
+		return modelRepo.findByIdCmpCodeAndIdSeriesCode(series.getId().getCmpCode(),series.getId().getSeriesCode());
 		
 	}
 	
