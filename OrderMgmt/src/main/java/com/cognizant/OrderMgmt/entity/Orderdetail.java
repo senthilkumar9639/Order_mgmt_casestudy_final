@@ -3,7 +3,6 @@ package com.cognizant.OrderMgmt.entity;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
@@ -37,7 +36,7 @@ public class Orderdetail {
 	@Column(name = "OrderTotalAmount")
 	private double orderTotalAmount;
 
-	@ManyToOne(fetch = FetchType.LAZY, optional = false)
+	@ManyToOne
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	@JsonIgnore
 	@JoinColumns({

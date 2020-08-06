@@ -31,10 +31,10 @@ public class Orderheader {
 	@Column(name = "OrderValue")
 	private double orderValue;
 
-	@OneToMany(mappedBy = "ordheader1", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "ordheader1",orphanRemoval = true, cascade = CascadeType.ALL)
 	private Set<Orderaccessorydetail> accDetails;
 
-	@OneToMany(mappedBy = "ordheader2", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "ordheader2",orphanRemoval = true, cascade = CascadeType.ALL)
 	private Set<Orderdetail> ordDetails;
 
 }

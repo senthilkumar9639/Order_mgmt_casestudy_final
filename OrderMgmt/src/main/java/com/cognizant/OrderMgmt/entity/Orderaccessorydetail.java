@@ -21,9 +21,8 @@ public class Orderaccessorydetail {
 	@EmbeddedId
 	private OrderaccessorydetailId id;
 
-	@ManyToOne(fetch = FetchType.LAZY, optional = false)
+	@ManyToOne
 	@OnDelete(action = OnDeleteAction.CASCADE)
-	@JsonIgnore
 	@JoinColumns({
 		@JoinColumn(name = "OrderNo", referencedColumnName = "OrderNo", nullable = false, insertable = false, updatable = false),
 		@JoinColumn(name = "DealerCode", referencedColumnName = "DealerCode", nullable = false, insertable = false, updatable = false),

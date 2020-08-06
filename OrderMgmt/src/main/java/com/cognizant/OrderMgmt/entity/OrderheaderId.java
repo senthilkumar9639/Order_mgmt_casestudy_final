@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
 
 import lombok.Data;
 
@@ -21,7 +20,7 @@ public class OrderheaderId implements Serializable {
 	private String dealerCode;
 
 	@Column(name = "OrderNo")
-	@GeneratedValue
+	
 	private String orderNo;
 
 }
